@@ -4,8 +4,10 @@ A platform to streamline up-to-date information on the congressional docket whil
 ###Dependencies
 * MongoDB
 * Node.js
-* Python
-
+	* require
+	* sunlight-congress-api
+	* mongoose
+	* express
 
 #####hit the sunlight API with a request that looks like this (most responses are JSON):
 * curl http://openstates.org/api/v1/legislators/?apikey=f8f5270cbe6a457398849e49d1b46070
