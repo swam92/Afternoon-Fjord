@@ -1,4 +1,5 @@
 var express = require('express');
+var request = require('request');
 var router = express.Router();
 
 
@@ -12,7 +13,13 @@ router.get('/information', function(req,res,next){
 });
 
 router.get('/polls', function(req,res,next){
-	res.render('polls');
+	request('http://elections.huffingtonpost.com/pollster/api/charts/obama-job-approval.json', function (error, response, body) {
+  	if (!error && response.statusCode == 200) {
+  		console.log(body);
+    	res.render('polls', {info: body});
+  	}
+})
+	
 });
 
 router.get('/news', function(req,res,next){
