@@ -39,7 +39,8 @@ router.get('/news', function(req,res,next){
   		if (!error && response.statusCode == 200) {
   			var parsedResponse = JSON.parse(body)
   			var localResponse = parsedResponse.response
-			var articles = localResponse["docs"] 
+			var articles = localResponse["docs"]
+			console.log(body); 
   			res.render('news', {articles: articles});
   		}
 	});

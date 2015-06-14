@@ -3,7 +3,10 @@
 <h1> NEWS </h1>
 <ul class = "no_bullet">
 {{#each articles}}
-<li class = "art"><a href={{web_url}}>{{headline.main}}</a>  <img src="/img/NYT.png" height="42" width = "42"></li><br>
+<li class = "art"><a href={{web_url}}>{{headline.main}}</a>
+<br>
+<p> {{pub_date}} </p> 
+<img src="/img/NYT.png" height="42" width = "42"></li><br>
 {{/each}}
 </ul>
 </html>

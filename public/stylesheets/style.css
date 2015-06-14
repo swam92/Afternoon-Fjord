@@ -14,3 +14,15 @@ a {
   color: #000000;
 }
 
+li {
+	text-align:center;
+}
+
+ul {
+	 list-style-type: none;
+}
+
+p {
+	text-align:center;
+	font-size: 50%
+}
