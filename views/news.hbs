@@ -1,8 +1,9 @@
 <html>
+<link href="stylesheets/style.css" rel="stylesheet">
 <h1> NEWS </h1>
-<ul>
+<ul class = "no_bullet">
 {{#each articles}}
-<li> <a href={{web_url}}>{{headline.main}}</a> </li><br>
+<li class = "art"><a href={{web_url}}>{{headline.main}}</a>  <img src="/img/NYT.png" height="42" width = "42"></li><br>
 {{/each}}
 </ul>
 </html>
