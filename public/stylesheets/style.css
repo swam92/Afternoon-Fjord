@@ -27,6 +27,24 @@ p {
 	font-size: 50%
 }
 
+h2 a:hover{
+	text-decoration: underline;
+	background-color: black;
+	color:#afbfdf;
+}
+
 .info {
 	text-align: left;
 }
+
+#list1 { }
+#list1 ul { list-style:none; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0; }
+#list1 ul li { display:inline; text-transform:uppercase; padding:0 10px; letter-spacing:10px; }
+#list1 ul li a { text-decoration:none; color:#eee; }
+#list1 ul li a:hover { text-decoration:underline; }
+
+#list2 { width:320px; }
+#list2 ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
+#list2 ol li { }
+#list2 ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:#eee; border-left: 1px solid #999; }
+#list2 ol li p em { display:block; }
